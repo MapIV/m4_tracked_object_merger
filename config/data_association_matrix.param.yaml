@@ -1,0 +1,18 @@
+/**:
+  ros__parameters:
+    distance_threshold_matrix:
+      #UNKNOWN, CAR, TRUCK, BUS,  TRAILER, MOTORBIKE, BICYCLE,PEDESTRIAN
+      [1.0,     1.5, 2.0,   2.0,  2.0,     1.0,       1.0,    1.0]
+
+    can_assign_matrix:
+      #UNKNOWN, CAR, TRUCK, BUS,  TRAILER, MOTORBIKE, BICYCLE,PEDESTRIAN
+      [1,       1,   1,     1,    1,       1,         1,      1,         #UNKNOWN
+      1,       1,   1,     1,    1,       0,         0,      0,         #CAR
+      1,       1,   1,     1,    1,       0,         0,      0,         #TRUCK
+      1,       1,   1,     1,    1,       0,         0,      0,         #BUS
+      1,       1,   1,     1,    1,       0,         0,      0,         #TRAILER
+      1,       0,   0,     0,    0,       1,         1,      1,         #MOTORBIKE
+      1,       0,   0,     0,    0,       1,         1,      1,         #BICYCLE
+      1,       0,   0,     0,    0,       1,         1,      1]         #PEDESTRIAN
+
+    
